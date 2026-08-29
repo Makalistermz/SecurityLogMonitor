@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 const logs = fs.readFileSync('../logs/security-monitor-access.log', 'utf8');
 
@@ -17,7 +17,7 @@ function retornarLinhasSemStringVazia(value) {
 }
 
 const linhaLimpa = removerQuebraLinha.filter(retornarLinhaSemAsterisco).filter(retornarLinhasSemStringVazia);
-const linhaEmObjeto = {
+export const linhaEmObjeto = {
     dados: linhaLimpa.map(linha => {
         const colunas = linha.split("|");
 
@@ -31,4 +31,3 @@ const linhaEmObjeto = {
         };
     })
 };
-console.log(linhaEmObjeto)
