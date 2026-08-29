@@ -16,5 +16,6 @@ function retornarLinhasSemStringVazia(value) {
     }
 }
 
-const removervazio = removerQuebraLinha.filter(retornarLinhaSemAsterisco).filter(retornarLinhasSemStringVazia);
-console.log(removervazio)
+const linhaLimpa = removerQuebraLinha.filter(retornarLinhaSemAsterisco).filter(retornarLinhasSemStringVazia);
+const linha
+console.log(linhaLimpa)
