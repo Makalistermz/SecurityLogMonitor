@@ -1,3 +1,7 @@
 import { linhaEmObjeto } from "./reader.js";
 
-console.log(linhaEmObjeto)
+function detectarForcaBruta() {
+    
+}
+
+detectarForcaBruta()
